@@ -16,6 +16,11 @@
 		BE9001DB1D0C1A9E009AB063 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE9001D91D0C1A9E009AB063 /* LaunchScreen.storyboard */; };
 		BE9001E61D0C1A9E009AB063 /* CoreDataDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9001E51D0C1A9E009AB063 /* CoreDataDemoTests.m */; };
 		BE9001F11D0C1A9E009AB063 /* CoreDataDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9001F01D0C1A9E009AB063 /* CoreDataDemoUITests.m */; };
+		BE9001FF1D0C1BE5009AB063 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9001FE1D0C1BE5009AB063 /* CoreData.framework */; };
+		BE9002011D0C1BF3009AB063 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9002001D0C1BF3009AB063 /* libsqlite3.0.tbd */; };
+		BE90025E1D0EB8D8009AB063 /* DatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE90025D1D0EB8D8009AB063 /* DatabaseManager.m */; };
+		BE9002631D0EC3F7009AB063 /* Student+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9002601D0EC3F7009AB063 /* Student+CoreDataProperties.m */; };
+		BE9002641D0EC3F7009AB063 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9002621D0EC3F7009AB063 /* Student.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,14 @@
 		BE9001EC1D0C1A9E009AB063 /* CoreDataDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9001F01D0C1A9E009AB063 /* CoreDataDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataDemoUITests.m; sourceTree = "<group>"; };
 		BE9001F21D0C1A9E009AB063 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE9001FE1D0C1BE5009AB063 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BE9002001D0C1BF3009AB063 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		BE90025C1D0EB8D8009AB063 /* DatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseManager.h; sourceTree = "<group>"; };
+		BE90025D1D0EB8D8009AB063 /* DatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseManager.m; sourceTree = "<group>"; };
+		BE90025F1D0EC3F7009AB063 /* Student+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Student+CoreDataProperties.h"; sourceTree = "<group>"; };
+		BE9002601D0EC3F7009AB063 /* Student+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Student+CoreDataProperties.m"; sourceTree = "<group>"; };
+		BE9002611D0EC3F7009AB063 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		BE9002621D0EC3F7009AB063 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE9002011D0C1BF3009AB063 /* libsqlite3.0.tbd in Frameworks */,
+				BE9001FF1D0C1BE5009AB063 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 		BE9001BC1D0C1A9E009AB063 = {
 			isa = PBXGroup;
 			children = (
+				BE9002001D0C1BF3009AB063 /* libsqlite3.0.tbd */,
+				BE9001FE1D0C1BE5009AB063 /* CoreData.framework */,
 				BE9001C71D0C1A9E009AB063 /* CoreDataDemo */,
 				BE9001E41D0C1A9E009AB063 /* CoreDataDemoTests */,
 				BE9001EF1D0C1A9E009AB063 /* CoreDataDemoUITests */,
@@ -103,6 +120,12 @@
 		BE9001C71D0C1A9E009AB063 /* CoreDataDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BE90025F1D0EC3F7009AB063 /* Student+CoreDataProperties.h */,
+				BE9002601D0EC3F7009AB063 /* Student+CoreDataProperties.m */,
+				BE9002611D0EC3F7009AB063 /* Student.h */,
+				BE9002621D0EC3F7009AB063 /* Student.m */,
+				BE90025C1D0EB8D8009AB063 /* DatabaseManager.h */,
+				BE90025D1D0EB8D8009AB063 /* DatabaseManager.m */,
 				BE9001CB1D0C1A9E009AB063 /* AppDelegate.h */,
 				BE9001CC1D0C1A9E009AB063 /* AppDelegate.m */,
 				BE9001CE1D0C1A9E009AB063 /* ViewController.h */,
@@ -274,7 +297,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE9001D01D0C1A9E009AB063 /* ViewController.m in Sources */,
+				BE9002631D0EC3F7009AB063 /* Student+CoreDataProperties.m in Sources */,
+				BE90025E1D0EB8D8009AB063 /* DatabaseManager.m in Sources */,
 				BE9001D61D0C1A9E009AB063 /* CoreDataDemo.xcdatamodeld in Sources */,
+				BE9002641D0EC3F7009AB063 /* Student.m in Sources */,
 				BE9001CD1D0C1A9E009AB063 /* AppDelegate.m in Sources */,
 				BE9001CA1D0C1A9E009AB063 /* main.m in Sources */,
 			);
@@ -420,9 +446,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CoreDataDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wkcode.CoreDataDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -431,9 +459,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CoreDataDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wkcode.CoreDataDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -502,6 +532,7 @@
 				BE9001F71D0C1A9E009AB063 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE9001F81D0C1A9E009AB063 /* Build configuration list for PBXNativeTarget "CoreDataDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +541,7 @@
 				BE9001FA1D0C1A9E009AB063 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE9001FB1D0C1A9E009AB063 /* Build configuration list for PBXNativeTarget "CoreDataDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +550,7 @@
 				BE9001FD1D0C1A9E009AB063 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
